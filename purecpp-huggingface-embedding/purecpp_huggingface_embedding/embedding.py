@@ -71,22 +71,22 @@ class HuggingFaceEmbeddings:
         return normalized_embeddings.tolist()
 
 
-# Example usage:
-if __name__ == '__main__':
-    # Initialize the embedding model
-    embeddings_model = HuggingFaceEmbeddings()
+# # Example usage:
+# if __name__ == '__main__':
+#     # Initialize the embedding model
+#     embeddings_model = HuggingFaceEmbeddings()
 
-    # Define some sentences to embed
-    sentences = [
-        "This is an example sentence.",
-        "Each sentence is converted to a vector."
-    ]
+#     # Define some sentences to embed
+#     sentences = [
+#         "This is an example sentence.",
+#         "Each sentence is converted to a vector."
+#     ]
 
-    # Generate embeddings
-    embeddings = embeddings_model.embed_documents(sentences)
+#     # Generate embeddings
+#     embeddings = embeddings_model.embed_documents(sentences)
 
-    # Print the results
-    for sentence, embedding in zip(sentences, embeddings):
-        print(f"\nSentence: {sentence}")
-        print(f"Embedding (first 5 dims): {embedding[:5]}...")
-        print(f"Embedding dimension: {len(embedding)}")
+#     # Print the results
+#     for sentence, embedding in zip(sentences, embeddings):
+#         print(f"\nSentence: {sentence}")
+#         print(f"Embedding (first 5 dims): {embedding[:5]}...")
+#         print(f"Embedding dimension: {len(embedding)}")
